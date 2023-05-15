@@ -4,14 +4,24 @@ This is just a simple example of a DevOps project related to Docker. There are m
 Steps:-
 --
 1- Create a simple web application in your favorite programming language.
-
+ 
 2- Create a Dockerfile for your application.
 
-3- Build your Docker image.
+3- Build your Docker image
 
-4- Push your Docker image to a Docker registry.
+   ##### $ docker build -t my-app .
+
+4- Push your Docker image to a Docker registry :- 
+  ##### $ docker push my-app
+
 
 5- Create a Kubernetes deployment for your application.
 
-6- Deploy your application to Kubernetes.
+6- Deploy your application to Kubernetes :- 
+##### $ kubectl apply -f deployment.yaml
+
+#### Once the application is deployed, you can access it at http://localhost:8080.
+
+
+
 
